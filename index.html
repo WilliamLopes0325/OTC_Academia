@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>OTC Academia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="header-top">
+    <img src="assets/img/logo.png" alt="OTC Academia" class="logo">
+
+    <nav>
+      <a href="#" onclick="mostrarSecao('home'); return false;">Home</a>
+      <a href="#" onclick="mostrarSecao('sobre'); return false;">Sobre a OTC</a>
+      <a href="#" onclick="mostrarSecao('modalidades'); return false;">Modalidades</a>
+      <a href="#" onclick="mostrarSecao('contato'); return false;">Contato</a>
+      <a href="#" onclick="mostrarSecao('planos'); return false;">Planos e Matrícula</a>
+    </nav>
+
+    <div class="menu-toggle" onclick="abrirMenuLateral()">☰</div>
+  </div>
+</header>
+
+<div id="menu-lateral" class="menu-lateral">
+  <span class="fechar-menu" onclick="fecharMenuLateral()">×</span>
+
+  <ul>
+    <li>
+      <a href="#" onclick="mostrarSecao('galeria'); fecharMenuLateral(); return false;">
+        Galeria
+      </a>
+    </li>
+
+    <li>
+      <a href="#" onclick="mostrarSecao('professores'); fecharMenuLateral(); return false;">
+        Professores
+      </a>
+    </li>
+
+    <li>
+      <a href="#" onclick="mostrarSecao('horario'); fecharMenuLateral(); return false;">
+        Horário de atendimento
+      </a>
+    </li>
+
+    <li>
+      <a href="#" onclick="mostrarSecao('avaliacao'); fecharMenuLateral(); return false;">
+        Avaliação Física
+      </a>
+    </li>
+  </ul>
+</div>
+
+<main id="conteudo">
+<section id="home">
+    <h2 class="home-titulo">Bem-vindo à OTC Academia</h2>
+    <p class="home-subtitulo">
+        Treine com qualidade, saúde e acompanhamento profissional.
+    </p>
+
+    <div class="home-galeria">
+
+    <div>
+        <img src="assets/img/home1.png" alt="">
+    </div>
+
+    <div>
+        <img src="assets/img/home2.png" alt="">
+    </div>
+
+    <div>
+        <img src="assets/img/home3.png" alt="">
+    </div>
+
+    <div>
+        <img src="assets/img/home4.png" alt="">
+    </div>
+
+</div>
+</section>
+
+<!-- NOVA SEÇÃO SOBRE A OTC -->
+<section id="sobre">
+    <h2 class="titulo-secao">Sobre a OTC Academia</h2>
+
+    <p class="subtitulo-secao">
+    A <strong>OTC Academia</strong> é um espaço dedicado à saúde, ao bem-estar e à 
+    qualidade de vida. Nosso compromisso é oferecer treinos eficientes com 
+    acompanhamento profissional, em um ambiente moderno, acolhedor e motivador.
+</p>
+
+<p class="subtitulo-secao">
+    Trabalhamos com programas de treino personalizados, respeitando os objetivos 
+    e o ritmo de cada aluno. Priorizamos sempre a segurança, o desempenho e a 
+    evolução contínua, garantindo resultados reais e duradouros.
+</p>
+
+<h3>Nossos Diferenciais</h3>
+<ul>
+    <li>Profissionais qualificados e experientes</li>
+    <li>Estrutura moderna e completa</li>
+    <li>Avaliação física individualizada</li>
+    <li>Ambiente motivador e acolhedor</li>
+</ul>
+</section>
+
+<section id="modalidades" class="modalidades-container">
+  <h2 class="titulo-secao">Modalidades</h2>
+
+  <div class="modalidades-grid">
+
+    <div class="modalidade-card">
+      <img src="assets/img/musculacao.png" alt="Musculação">
+      <span>Musculação</span>
+    </div>
+
+    <div class="modalidade-card">
+      <img src="assets/img/taekwondo.png" alt="Taekwondo">
+      <span>Taekwondo</span>
+    </div>
+
+    <div class="modalidade-card">
+      <img src="assets/img/muaythai.png" alt="Muay Thai">
+      <span>Muay Thai</span>
+    </div>
+
+    <div class="modalidade-card">
+      <img src="assets/img/jiujitsu.png" alt="Jiu-Jitsu">
+      <span>Jiu-Jitsu</span>
+    </div>
+
+  </div>
+</section>
+
+<section id="planos" class="planos-container">
+
+  <h2 class="titulo-secao">Planos e Matrícula</h2>
+
+  <p class="planos-subtitulo">
+  Conheça nossos planos e condições especiais
+</p>
+
+<p class="destaque-musculacao-texto">
+  💪 <strong>ACESSO À MUSCULAÇÃO INCLUSO EM TODOS OS PLANOS</strong>
+</p>
+
+  <div class="planos-grid">
+
+    <!-- JIU-JITSU -->
+    <div class="plano-card">
+
+  <img src="assets/img/planoJIU.png" alt="Jiu-Jitsu">
+
+
+  <div class="plano-info">
+    
+<button class="btn-matricula" onclick="abrirCadastro()">
+  Matricule-se
+</button>
+
+  </div>
+</div>
+
+    <!-- MUAY THAI -->
+  <div class="plano-card">
+
+  <img src="assets/img/planoMT.png" alt="Muay Thai">
+
+  <div class="plano-info">
+  
+<button class="btn-matricula" onclick="abrirCadastro()">
+  Matricule-se
+</button>
+
+  </div>
+</div>
+
+
+    <!-- TAEKWONDO -->
+  <div class="plano-card">
+
+  <img src="assets/img/planoTKD.png" alt="Taekwondo">
+
+
+  <div class="plano-info">
+  
+<button class="btn-matricula" onclick="abrirCadastro()">
+  Matricule-se
+</button>
+
+  </div>
+</div>
+
+
+</section>
+
+
+<section id="galeria">
+  <h2 class="titulo-secao">Galeria</h2>
+
+  <p class="subtitulo-secao">
+  Conheça um pouco do nosso espaço, equipamentos e treinos realizados
+  na OTC Academia.
+</p>
+
+  <div class="galeria-grid">
+    <img src="assets/img/galeria1.png">
+    <img src="assets/img/galeria2.png">
+    <img src="assets/img/galeria3.png">
+    <img src="assets/img/galeria4.png">
+    <img src="assets/img/galeria5.png">
+    <img src="assets/img/galeria6.png">
+  </div>
+</section>
+
+<section id="avaliacao">
+    <h2>Avaliação Física - IMC</h2>
+<p>Descubra seu nível corporal e acompanhe sua evolução com nossos profissionais.</p>
+
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" placeholder="Nome do aluno">
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" placeholder="Idade">
+
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso">
+
+    <label for="altura">Altura (m):</label>
+    <input type="number" step="0.01" id="altura">
+
+    <label for="profissional">Profissional responsável:</label>
+    <input type="text" id="profissional" placeholder="Nome do profissional">
+
+    <button onclick="calcularIMC()">Calcular IMC</button>
+
+    <button onclick="imprimirIMC()" class="btn-imprimir">
+        Imprimir Avaliação IMC
+    </button>
+    <button onclick="limparDados()" class="btn-limpar">
+    Limpar dados
+</button>
+
+    <p id="resultado" class="resultado-imc"></p>
+
+    <h3>Tabela de IMC – Classificação OMS</h3>
+
+    <table class="tabela-imc">
+        <thead>
+            <tr>
+                <th>Classificação</th>
+                <th>IMC</th>
+                <th>Risco de Comorbidades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="abaixo-peso">
+                <td>Abaixo do peso</td>
+                <td>&lt; 18,5</td>
+                <td>Baixo</td>
+            </tr>
+            <tr class="eutrofico">
+                <td>Eutrófico</td>
+                <td>18,5 – 24,9</td>
+                <td>Médio</td>
+            </tr>
+            <tr class="sobrepeso">
+                <td>Sobrepeso</td>
+                <td>25,0 – 29,9</td>
+                <td>Pouco elevado</td>
+            </tr>
+            <tr class="obesidade1">
+                <td>Obesidade grau I</td>
+                <td>30,0 – 34,9</td>
+                <td>Elevado</td>
+            </tr>
+            <tr class="obesidade2">
+                <td>Obesidade grau II</td>
+                <td>35,0 – 39,9</td>
+                <td>Muito elevado</td>
+            </tr>
+            <tr class="obesidade3">
+                <td>Obesidade grau III</td>
+                <td>≥ 40,0</td>
+                <td>Muitíssimo elevado</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="contato">
+    <h2 class="titulo-secao">Contato</h2>
+    <p>Email: contato@otcacademia.com</p>
+    <p>Telefone: (19) 99152-4542</p>
+    <p>Endereço: Av. Paulo Provenza Sobrinho, 194 - Jardim Campos Eliseos, Campinas - SP, 13060-864</p>
+</section>
+
+<section id="professores">
+  <h2 class="titulo-secao">Nossos Professores</h2>
+
+  <div class="cards-professores">
+
+    <div class="card-professor">
+      <img src="assets/img/carlos-costa.png" alt="Professor Carlos Costa">
+      
+      <div class="info">
+        <h3>Professor Carlos Costa</h3>
+        <span class="modalidade">Taekwondo e Musculação</span>
+      </div>
+
+      <div class="btn-mais" onclick="abrirInfo('carlos-costa')">+</div>
+      
+
+    </div>
+
+    <div class="card-professor">
+      <img src="assets/img/carlos-costa-junior.png" alt="Professor Carlos Costa Junior">
+      
+      <div class="info">
+        <h3>Professor Carlos Costa Junior</h3>
+        <span class="modalidade">Taekwondo</span>
+      </div>
+
+      <div class="btn-mais" onclick="abrirInfo('carlos-costa-junior')">+</div>
+
+    </div>
+
+    <div class="card-professor">
+      <img src="assets/img/vlademir.png" alt="Professor Vlademir">
+      
+      <div class="info">
+        <h3>Professor Vlademir</h3>
+        <span class="modalidade">Muay Thai</span>
+      </div>
+
+      <div class="btn-mais" onclick="abrirInfo('vlademir')">+</div>
+
+    </div>
+
+    <div class="card-professor">
+      <img src="assets/img/anderson.png" alt="Professor Anderson">
+      
+      <div class="info">
+        <h3>Professor Anderson</h3>
+        <span class="modalidade">Jiu-Jitsu</span>
+      </div>
+
+      <div class="btn-mais" onclick="abrirInfo('anderson')">+</div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="horario">
+    <h2 class="titulo-secao">Horário de Atendimento</h2>
+
+    <h2 class="musculacao">Musculação</h2>
+    <p>Segunda a sexta: 06h às 22h<br>
+    Sábado: 08h às 13h</p>
+
+    <h2 class="taekwondo">Taekwondo</h2>
+    <p>Segunda, Quarta, Sexta: 08:30 às 09:30 (manhã) - 18:15 às 19:15h (infantil) - 19:15 às 20:15h (juvenil) - 20:15h às 21:15h (adulto)</p>
+
+    <h2 class="jiujitsu">Jiu-jitsu</h2>
+    <p>Terça e Quinta: 08:30 às 09:30h</p>
+
+    <h2 class="muaythai">Muay Thai</h2>
+    <p>Terça e Quinta: 20h às 21h</p>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-social">
+        <a href="https://instagram.com/academiaotc" target="_blank" aria-label="Instagram">
+            <img src="assets/img/instagram.png" alt="Instagram">
+            <span>@academiaotc</span>
+        </a>
+
+        <a href="https://facebook.com/academiaotc" target="_blank" aria-label="Facebook">
+            <img src="assets/img/facebook.png" alt="Facebook">
+            <span>@academiaotc</span>
+        </a>
+
+        <a href="https://www.youtube.com/@momentotkd4458" target="_blank">
+            <img src="assets/img/youtube.png" class="icon-youtube" alt="YouTube">
+            <span>@momentotkd4458</span>
+        </a>
+
+    </div>
+</footer>
+
+
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-fechar" onclick="fecharLightbox()">×</span>
+    <span class="lightbox-seta esquerda" onclick="imagemAnterior()">❮</span>
+
+    <img id="lightbox-img">
+
+    <span class="lightbox-seta direita" onclick="proximaImagem()">❯</span>
+</div>
+
+<a href="https://wa.me/5519991524542"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Contato via WhatsApp">
+    <img src="assets/img/whatsapp.png" alt="WhatsApp">
+</a>
+
+<div id="modal-professor" class="modal-prof">
+    <div class="modal-content-prof">
+
+        <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+
+        <div class="modal-layout">
+
+            <div class="modal-img">
+                <img id="foto-prof" src="">
+            </div>
+
+            <div class="modal-texto">
+                <h2 id="nome-prof"></h2>
+                <p id="desc-prof"></p>
+            </div>
+
+        </div>
+
+    </div>s
+</div>
+
+<script src="assets/js/script.js"></script>
+
+<div id="modal-cadastro" class="modal-cadastro" aria-hidden="true">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="titulo-cadastro">
+
+    <button class="fechar" type="button" onclick="fecharCadastro()" aria-label="Fechar cadastro">×</button>
+
+    <h2 id="titulo-cadastro">Cadastro</h2>
+    <p class="modal-sub">Preencha seus dados e finalize sua matrícula com a OTC.</p>
+
+    <form id="form-cadastro" autocomplete="off" onsubmit="enviarCadastro(event)">
+
+    <label for="cad-nome">Nome</label>
+    <input id="cad-nome" name="nome" type="text" placeholder="Digite seu nome" required />
+
+    <label for="cad-telefone">Telefone</label>
+    <input id="cad-telefone" name="telefone" type="tel" placeholder="(19) 99999-9999" required />
+
+    <label for="cad-email">E-mail</label>
+    <input id="cad-email" name="email" type="email" placeholder="seuemail@email.com" required />
+
+    <select id="cad-plano" name="plano" required>
+      <option value="">Selecione um plano</option>
+      <option value="mensal">Mensal R$216,00</option>
+      <option value="trimestral">Trimestral R$180,00</option>
+      <option value="semestral">Semestral R$156,00</option>
+      <option value="anual">Anual R$120,00</option>
+</select>
+
+      <h3 style="margin-top:15px;">Endereço</h3>
+
+
+      <label for="cad-cep">CEP</label>
+      <input id="cad-cep" name="cep" type="text" placeholder="00000-000" onblur="buscarCEP()">
+
+      <label for="cad-rua">Rua</label>
+      <input id="cad-rua" name="rua" type="text">
+
+      <label for="cad-numero">Número</label>
+      <input id="cad-numero" name="numero" type="text">
+
+      <label for="cad-complemento">Complemento</label>
+      <input id="cad-complemento" name="complemento" type="text" placeholder="Apto, bloco, casa...">
+
+      <label for="cad-bairro">Bairro</label>
+      <input id="cad-bairro" name="bairro" type="text">
+
+      <label for="cad-cidade">Cidade</label>
+      <input id="cad-cidade" name="cidade" type="text">
+
+      <label for="cad-estado">Estado</label>
+      <input id="cad-estado" name="estado" type="text">
+
+      <button class="btn-enviar" type="submit">Enviar</button>
+
+      <p id="cad-erro" class="cad-erro" aria-live="polite"></p>
+    </form>
+
+  </div>
+</div>
+
+</body>
+</html>
