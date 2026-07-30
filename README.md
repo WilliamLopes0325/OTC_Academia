@@ -53,6 +53,10 @@ Desenvolver uma solução web para divulgação da academia e facilitar o proces
 
 ![Avaliação](academia2.png)
 
+### Página Inicial - Grade avaliação física
+
+![Avaliação](academia3.png)
+
 
 
 ## Autor
