@@ -45,6 +45,15 @@ Desenvolver uma solução web para divulgação da academia e facilitar o proces
 
 ## Preview
 
+### Página Inicial - Tópicos
+
+![Página Inicial](academia.png)
+
+### Página Inicial - Rede sociais 
+
+![Avaliação](academia2.png)
+
+
 
 ## Autor
 
