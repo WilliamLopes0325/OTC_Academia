@@ -2,17 +2,11 @@
 
 Sistema web desenvolvido para uma academia com foco em apresentação institucional e gerenciamento básico de matrículas.
 
-## Funcionalidades
-
-✅ Página institucional
-
-✅ Modalidades esportivas
+## Principais Funcionalidades
 
 ✅ Cadastro de alunos
 
-✅ Planos de matrícula
-
-✅ Avaliação física IMC
+✅ Avaliação Física IMC
 
 ✅ Impressão de avaliação
 
@@ -20,11 +14,15 @@ Sistema web desenvolvido para uma academia com foco em apresentação institucio
 
 ✅ Integração com WhatsApp
 
-✅ Galeria de fotos
+✅ Planos de matrícula
+
+✅ Galeria de imagens
 
 ✅ Área de professores
 
-✅ Responsivo para desktop e mobile
+✅ Navegação dinâmica em JavaScript
+
+✅ Layout responsivo
 
 ---
 
@@ -43,20 +41,19 @@ Desenvolver uma solução web para divulgação da academia e facilitar o proces
 
 ---
 
-## Preview
+## Preview do Sistema
 
-### Página Inicial - Tópicos
+### Home
 
-![Página Inicial](academia.png)
+![Home](academia.png)
 
-### Página Inicial - Rede sociais 
+### Integração com Redes Sociais
 
-![Avaliação](academia2.png)
+![Redes Sociais](academia2.png)
 
-### Página Inicial - Grade avaliação física
+### Sistema de Avaliação Física (IMC)
 
-![Avaliação](academia3.png)
-
+![IMC](academia3.png)
 
 
 ## Autor
